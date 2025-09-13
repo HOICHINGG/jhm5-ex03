@@ -12,7 +12,8 @@
  */
 
 export default {
-	async fetch(request, env, ctx): Promise<Response> {
-		return new Response('Hello Hoiching!');
+	async fetch(request, env, ctx): Promise<Response>{ {
+		return new Response('Hello Hoiching!');}
+		return env.ASSETS.fetch(request);
 	},
 } satisfies ExportedHandler<Env>;
